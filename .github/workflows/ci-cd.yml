@@ -49,13 +49,13 @@ jobs:
 
       - name: Build et push image backend
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/backend:${{ github.sha }} ./backend
-          docker push ghcr.io/${{ github.repository }}/backend:${{ github.sha }}
+          docker build -t ghcr.io/steven200294/vitalsync/backend:${{ github.sha }} ./backend
+          docker push ghcr.io/steven200294/vitalsync/backend:${{ github.sha }}
 
       - name: Build et push image frontend
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/frontend:${{ github.sha }} ./frontend
-          docker push ghcr.io/${{ github.repository }}/frontend:${{ github.sha }}
+          docker build -t ghcr.io/steven200294/vitalsync/frontend:${{ github.sha }} ./frontend
+          docker push ghcr.io/steven200294/vitalsync/frontend:${{ github.sha }}
 
   # Etape 3 - Deploiement staging
   deploy-staging:
