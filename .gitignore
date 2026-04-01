@@ -1,0 +1,27 @@
+# Dépendances Node.js - ne doivent pas être versionnées car installées via npm install
+node_modules/
+
+# Variables d'environnement - contiennent des secrets (mots de passe, tokens)
+.env
+
+# Logs applicatifs - fichiers temporaires sans intérêt pour le versioning
+*.log
+npm-debug.log*
+
+# Répertoire de build - fichiers générés automatiquement
+dist/
+build/
+
+# Couverture de tests - générée à chaque exécution
+coverage/
+
+# Fichiers système OS
+.DS_Store
+Thumbs.db
+
+# Fichiers IDE
+.vscode/
+.idea/
+
+# Données Docker locales
+docker-compose.override.yml
